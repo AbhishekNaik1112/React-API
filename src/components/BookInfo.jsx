@@ -12,6 +12,7 @@ const BookInfo = () => {
       })
       .then((response) => {
         setBooks(response.data.books);
+        console.log(response.data.books)
       })
       .catch((error) => {
         if (error.response && error.response.status === 404) {
